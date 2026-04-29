@@ -1,0 +1,6 @@
+2026-04-29 14:47:18 | INFO     | BasicAuthPage redirect to login page
+2026-04-29 14:47:23 | INFO     | BasicAuthPage get text content
+2026-04-29 14:47:23 | INFO     | WebElement[Congratulations! You must have the proper credentials.]: get text content
+2026-04-29 14:47:23 | INFO     | WebElement[Congratulations! You must have the proper credentials.]: text content = '
+    Congratulations! You must have the proper credentials.
+  '
