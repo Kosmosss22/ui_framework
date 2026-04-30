@@ -1,5 +1,3 @@
-from urllib.error import URLError
-
 from faker import Faker
 from pages.alerts_page import AlertsPage
 from logger import LOGGER_NAME

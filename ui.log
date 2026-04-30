@@ -51,3 +51,6 @@
 2026-04-30 16:07:18 | INFO     | WebElement[Секция Result]: get text content
 2026-04-30 16:07:18 | INFO     | WebElement[Секция Result]: text content = 'You entered: behind'
 2026-04-30 16:07:18 | INFO     | TEST: All alert scenarios passed
+2026-04-30 16:46:00 | INFO     | TEST: Starting context click test
+2026-04-30 16:46:02 | INFO     | ContextClickPage right click and get alert
+2026-04-30 16:46:02 | INFO     | WebElement[div for right click] right click on element: <Locator frame=<Frame name= url='https://the-internet.herokuapp.com/context_menu'> selector='#hot-spot'>
