@@ -1,6 +1,7 @@
 import logging
-from  logger import LOGGER_NAME
+from logger import LOGGER_NAME
 from components.webelement import WebElement
+
 
 logger = logging.getLogger(LOGGER_NAME)
 
@@ -9,9 +10,9 @@ class BasicAuthPage:
     def __init__(self, page):
         self.page = page
         self.success_message = WebElement(
-            page.locator(".example p"),
-            page,
-            "Congratulations! You must have the proper credentials."
+            locator=page.locator(".example p"),
+            page=page,
+            description="Congratulations! You must have the proper credentials."
         )
 
     def __str__(self):

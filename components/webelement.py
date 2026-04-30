@@ -1,7 +1,5 @@
 import logging
 from playwright.sync_api import Page, Locator
-from pytest_playwright.pytest_playwright import page
-
 from  logger import LOGGER_NAME
 
 logger = logging.getLogger(LOGGER_NAME)
