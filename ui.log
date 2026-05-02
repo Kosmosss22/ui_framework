@@ -199,3 +199,24 @@
 2026-05-02 12:31:54 | INFO     | Hovers page get user name
 2026-05-02 12:31:54 | INFO     | WebElement[User names[2]]: get inner text
 2026-05-02 12:31:54 | INFO     | WebElement[User names[2]]: inner text = 'name: user3'
+2026-05-02 13:14:08 | INFO     | TEST: Starting windows test
+2026-05-02 13:14:10 | INFO     | PageActions: expect new page
+2026-05-02 13:14:10 | INFO     | <pages.windows_page.WindowsPage object at 0x00000224F67AE7B0> click here link
+2026-05-02 13:14:10 | INFO     | WebElement[Link: 'Click Here'] click on element: <Locator frame=<Frame name= url='https://the-internet.herokuapp.com/windows'> selector='.example a'>
+2026-05-02 13:17:05 | INFO     | TEST: Starting windows test
+2026-05-02 13:17:08 | INFO     | PageActions: expect new page
+2026-05-02 13:17:08 | INFO     | <pages.windows_page.WindowsPage object at 0x0000026908FEE7B0> click here link
+2026-05-02 13:17:08 | INFO     | WebElement[Link: 'Click Here'] click on element: <Locator frame=<Frame name= url='https://the-internet.herokuapp.com/windows'> selector='.example a'>
+2026-05-02 13:18:28 | INFO     | TEST: Starting windows test
+2026-05-02 13:18:31 | INFO     | PageActions: expect new page
+2026-05-02 13:18:31 | INFO     | <pages.windows_page.WindowsPage object at 0x0000022476E0A7B0> click here link
+2026-05-02 13:18:31 | INFO     | WebElement[Link: 'Click Here'] click on element: <Locator frame=<Frame name= url='https://the-internet.herokuapp.com/windows'> selector='.example a'>
+2026-05-02 13:18:31 | INFO     | <pages.windows_page.WindowsPage object at 0x0000022476E0E710> get text from new window
+2026-05-02 13:18:31 | INFO     | WebElement[New Window]: get inner text
+2026-05-02 13:18:31 | INFO     | WebElement[New Window]: inner text = 'New Window'
+2026-05-02 13:18:31 | INFO     | PageActions: expect new page
+2026-05-02 13:18:31 | INFO     | <pages.windows_page.WindowsPage object at 0x0000022476E0A7B0> click here link
+2026-05-02 13:18:31 | INFO     | WebElement[Link: 'Click Here'] click on element: <Locator frame=<Frame name= url='https://the-internet.herokuapp.com/windows'> selector='.example a'>
+2026-05-02 13:18:31 | INFO     | <pages.windows_page.WindowsPage object at 0x0000022476E0F110> get text from new window
+2026-05-02 13:18:31 | INFO     | WebElement[New Window]: get inner text
+2026-05-02 13:18:31 | INFO     | WebElement[New Window]: inner text = 'New Window'

@@ -1,0 +1,36 @@
+from actions.page_actions import PageActions
+from pages.windows_page import WindowsPage
+from logger import LOGGER_NAME
+import logging
+
+logger = logging.getLogger(LOGGER_NAME)
+
+def test_windows(page):
+    logger.info("TEST: Starting windows test")
+    windows_page = WindowsPage(page)
+    url = "https://the-internet.herokuapp.com/windows"
+
+    page.goto(url)
+
+    actions = PageActions(page)
+
+    with actions.expect_new_page() as event_1:
+        windows_page.click_here()
+
+    page_1 = event_1.value
+    win_1 = WindowsPage(page_1)
+    text_1 = win_1.get_new_window_text()
+    assert "New Window" in text_1
+
+    with actions.expect_new_page() as event_2:
+        windows_page.click_here()
+
+    page_2 = event_2.value
+    win_2 = WindowsPage(page_2)
+    text_2 = win_2.get_new_window_text()
+    assert "New Window" in text_2
+
+    page_1.close()
+    page_2.close()
+
+    assert len(page.context.pages) == 1
