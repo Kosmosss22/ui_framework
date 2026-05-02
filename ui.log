@@ -169,3 +169,33 @@
 2026-05-02 11:39:52 | INFO     | SliderPage get display value
 2026-05-02 11:39:52 | INFO     | WebElement[slider value]: get text content
 2026-05-02 11:39:52 | INFO     | WebElement[slider value]: text content = '1.5'
+2026-05-02 12:29:09 | INFO     | TEST: Starting hovers test
+2026-05-02 12:29:11 | INFO     | Hovers page get user count
+2026-05-02 12:29:11 | INFO     | Checking the user №0
+2026-05-02 12:29:11 | INFO     | Hovers page hover over user[0]
+2026-05-02 12:31:51 | INFO     | TEST: Starting hovers test
+2026-05-02 12:31:54 | INFO     | Hovers page get user count
+2026-05-02 12:31:54 | INFO     | Checking the user №0
+2026-05-02 12:31:54 | INFO     | Hovers page hover over user[0]
+2026-05-02 12:31:54 | INFO     | WebElement[user img[0]]: hover
+2026-05-02 12:31:54 | INFO     | WebElement[User names[0]]: waiting for visible
+2026-05-02 12:31:54 | INFO     | WebElement[User names[0]]: is visible
+2026-05-02 12:31:54 | INFO     | Hovers page get user name
+2026-05-02 12:31:54 | INFO     | WebElement[User names[0]]: get inner text
+2026-05-02 12:31:54 | INFO     | WebElement[User names[0]]: inner text = 'name: user1'
+2026-05-02 12:31:54 | INFO     | Checking the user №1
+2026-05-02 12:31:54 | INFO     | Hovers page hover over user[1]
+2026-05-02 12:31:54 | INFO     | WebElement[user img[1]]: hover
+2026-05-02 12:31:54 | INFO     | WebElement[User names[1]]: waiting for visible
+2026-05-02 12:31:54 | INFO     | WebElement[User names[1]]: is visible
+2026-05-02 12:31:54 | INFO     | Hovers page get user name
+2026-05-02 12:31:54 | INFO     | WebElement[User names[1]]: get inner text
+2026-05-02 12:31:54 | INFO     | WebElement[User names[1]]: inner text = 'name: user2'
+2026-05-02 12:31:54 | INFO     | Checking the user №2
+2026-05-02 12:31:54 | INFO     | Hovers page hover over user[2]
+2026-05-02 12:31:54 | INFO     | WebElement[user img[2]]: hover
+2026-05-02 12:31:54 | INFO     | WebElement[User names[2]]: waiting for visible
+2026-05-02 12:31:54 | INFO     | WebElement[User names[2]]: is visible
+2026-05-02 12:31:54 | INFO     | Hovers page get user name
+2026-05-02 12:31:54 | INFO     | WebElement[User names[2]]: get inner text
+2026-05-02 12:31:54 | INFO     | WebElement[User names[2]]: inner text = 'name: user3'

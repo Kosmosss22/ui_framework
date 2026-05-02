@@ -1,8 +1,6 @@
 from playwright.sync_api import Locator, Page
 from typing_extensions import Self
-
-from ui.web_element import WebElement
-
+from .webelement import WebElement
 
 class MultiWebElement:
     def __init__(
@@ -26,6 +24,7 @@ class MultiWebElement:
 
         element = WebElement(
             locator=self.locator.nth(self.index),
+            page=self.page,
             description=f"{self.description}[{self.index}]",
         )
 
@@ -35,18 +34,21 @@ class MultiWebElement:
     def nth(self, index: int) -> WebElement:
         return WebElement(
             locator=self.locator.nth(index),
+            page=self.page,
             description=f"{self.description}[{index}]",
         )
 
     def first(self) -> WebElement:
         return WebElement(
             locator=self.locator.first,
+            page=self.page,
             description=f"{self.description}[first]",
         )
 
     def last(self) -> WebElement:
         return WebElement(
             locator=self.locator.last,
+            page=self.page,
             description=f"{self.description}[last]",
         )
 
@@ -57,6 +59,7 @@ class MultiWebElement:
         return [
             WebElement(
                 locator=loc,
+                page=self.page,
                 description=f"{self.description}[{i}]",
             )
             for i, loc in enumerate(self.locator.all())
