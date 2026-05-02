@@ -2,7 +2,6 @@ import logging
 from logger import LOGGER_NAME
 from components.webelement import WebElement
 
-
 logger = logging.getLogger(LOGGER_NAME)
 
 
@@ -33,57 +32,21 @@ class AlertsPage:
             page=page,
             description="Секция Result"
         )
+
     def __str__(self):
         return "AlertsPage"
 
-    # Код повторяется, я это заметил, но пока не буду исправлять
     def trigger_alert(self):
         logger.info(f"{self} Click for JS Alert")
-
-        dialog_message = None
-
-        def handle_dialog(dialog):
-            nonlocal dialog_message
-            dialog_message = dialog.message
-            dialog.accept()
-
-        self.page.on("dialog", handle_dialog)
         self.button_js_alert.click()
-        self.page.remove_listener("dialog", handle_dialog)
-
-        return dialog_message
 
     def trigger_confirm(self):
         logger.info(f"{self} Click for JS Confirm")
-
-        dialog_message = None
-
-        def handle_dialog(dialog):
-            nonlocal dialog_message
-            dialog_message = dialog.message
-            dialog.accept()
-
-        self.page.on("dialog", handle_dialog)
         self.button_js_confirm.click()
-        self.page.remove_listener("dialog", handle_dialog)
 
-        return dialog_message
-
-    def trigger_prompt(self, input_text):
+    def trigger_prompt(self):
         logger.info(f"{self} click and fill prompt")
-
-        dialog_message = None
-
-        def handle_dialog(dialog):
-            nonlocal dialog_message
-            dialog_message = dialog.message
-            dialog.accept(input_text)
-
-        self.page.on("dialog", handle_dialog)
         self.button_js_prompt.click()
-        self.page.remove_listener("dialog", handle_dialog)
-
-        return dialog_message
 
     def get_result_text(self):
         logger.info(f"{self} get result text")

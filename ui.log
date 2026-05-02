@@ -220,3 +220,51 @@
 2026-05-02 13:18:31 | INFO     | <pages.windows_page.WindowsPage object at 0x0000022476E0F110> get text from new window
 2026-05-02 13:18:31 | INFO     | WebElement[New Window]: get inner text
 2026-05-02 13:18:31 | INFO     | WebElement[New Window]: inner text = 'New Window'
+2026-05-02 13:41:06 | INFO     | TEST: Starting alerts test
+2026-05-02 13:41:08 | INFO     | PageActions: accept dialog
+2026-05-02 13:41:08 | INFO     | PageActions: expect dialog
+2026-05-02 13:41:08 | INFO     | AlertsPage Click for JS Alert
+2026-05-02 13:41:08 | INFO     | WebElement[Кнопка JS Alert] click on element: <Locator frame=<Frame name= url='https://the-internet.herokuapp.com/javascript_alerts'> selector='button:has-text("Click for JS Alert")'>
+2026-05-02 13:41:08 | INFO     | PageActions: dialog 'alert' with message 'I am a JS Alert'
+2026-05-02 13:41:08 | INFO     | AlertsPage get result text
+2026-05-02 13:41:08 | INFO     | WebElement[Секция Result]: get text content
+2026-05-02 13:41:08 | INFO     | WebElement[Секция Result]: text content = 'You successfully clicked an alert'
+2026-05-02 13:41:08 | INFO     | PageActions: accept dialog
+2026-05-02 13:41:08 | INFO     | PageActions: expect dialog
+2026-05-02 13:41:08 | INFO     | AlertsPage Click for JS Confirm
+2026-05-02 13:41:08 | INFO     | WebElement[Кнопка JS Confirm] click on element: <Locator frame=<Frame name= url='https://the-internet.herokuapp.com/javascript_alerts'> selector='button:has-text("Click for JS Confirm")'>
+2026-05-02 13:41:08 | INFO     | PageActions: dialog 'confirm' with message 'I am a JS Confirm'
+2026-05-02 13:41:08 | INFO     | AlertsPage get result text
+2026-05-02 13:41:08 | INFO     | WebElement[Секция Result]: get text content
+2026-05-02 13:41:08 | INFO     | WebElement[Секция Result]: text content = 'You clicked: Ok'
+2026-05-02 13:41:08 | INFO     | PageActions: accept prompt
+2026-05-02 13:41:08 | INFO     | PageActions: expect dialog
+2026-05-02 13:41:08 | INFO     | AlertsPage click and fill prompt
+2026-05-02 13:41:08 | INFO     | WebElement[Кнопка JS Prompt] click on element: <Locator frame=<Frame name= url='https://the-internet.herokuapp.com/javascript_alerts'> selector='button:has-text("Click for JS Prompt")'>
+2026-05-02 13:41:08 | INFO     | PageActions: dialog 'prompt' with message 'I am a JS prompt'
+2026-05-02 13:41:20 | INFO     | TEST: Starting alerts test
+2026-05-02 13:41:22 | INFO     | PageActions: accept dialog
+2026-05-02 13:41:22 | INFO     | PageActions: expect dialog
+2026-05-02 13:41:22 | INFO     | AlertsPage Click for JS Alert
+2026-05-02 13:41:22 | INFO     | WebElement[Кнопка JS Alert] click on element: <Locator frame=<Frame name= url='https://the-internet.herokuapp.com/javascript_alerts'> selector='button:has-text("Click for JS Alert")'>
+2026-05-02 13:41:22 | INFO     | PageActions: dialog 'alert' with message 'I am a JS Alert'
+2026-05-02 13:41:22 | INFO     | AlertsPage get result text
+2026-05-02 13:41:22 | INFO     | WebElement[Секция Result]: get text content
+2026-05-02 13:41:22 | INFO     | WebElement[Секция Result]: text content = 'You successfully clicked an alert'
+2026-05-02 13:41:22 | INFO     | PageActions: accept dialog
+2026-05-02 13:41:22 | INFO     | PageActions: expect dialog
+2026-05-02 13:41:22 | INFO     | AlertsPage Click for JS Confirm
+2026-05-02 13:41:22 | INFO     | WebElement[Кнопка JS Confirm] click on element: <Locator frame=<Frame name= url='https://the-internet.herokuapp.com/javascript_alerts'> selector='button:has-text("Click for JS Confirm")'>
+2026-05-02 13:41:22 | INFO     | PageActions: dialog 'confirm' with message 'I am a JS Confirm'
+2026-05-02 13:41:22 | INFO     | AlertsPage get result text
+2026-05-02 13:41:22 | INFO     | WebElement[Секция Result]: get text content
+2026-05-02 13:41:22 | INFO     | WebElement[Секция Result]: text content = 'You clicked: Ok'
+2026-05-02 13:41:22 | INFO     | PageActions: accept prompt
+2026-05-02 13:41:22 | INFO     | PageActions: expect dialog
+2026-05-02 13:41:22 | INFO     | AlertsPage click and fill prompt
+2026-05-02 13:41:22 | INFO     | WebElement[Кнопка JS Prompt] click on element: <Locator frame=<Frame name= url='https://the-internet.herokuapp.com/javascript_alerts'> selector='button:has-text("Click for JS Prompt")'>
+2026-05-02 13:41:22 | INFO     | PageActions: dialog 'prompt' with message 'I am a JS prompt'
+2026-05-02 13:41:22 | INFO     | AlertsPage get result text
+2026-05-02 13:41:22 | INFO     | WebElement[Секция Result]: get text content
+2026-05-02 13:41:22 | INFO     | WebElement[Секция Result]: text content = 'You entered: business'
+2026-05-02 13:41:22 | INFO     | TEST: All alert scenarios passed
