@@ -54,3 +54,118 @@
 2026-04-30 16:46:00 | INFO     | TEST: Starting context click test
 2026-04-30 16:46:02 | INFO     | ContextClickPage right click and get alert
 2026-04-30 16:46:02 | INFO     | WebElement[div for right click] right click on element: <Locator frame=<Frame name= url='https://the-internet.herokuapp.com/context_menu'> selector='#hot-spot'>
+2026-04-30 17:51:48 | INFO     | Test: Starting slider test
+2026-04-30 17:51:51 | INFO     | SliderPage get min max
+2026-04-30 17:51:51 | INFO     | WebElement[slider]: get attribute 'min'
+2026-04-30 17:51:51 | INFO     | WebElement[slider]: attribute 'min' = '0.0'
+2026-04-30 17:51:51 | INFO     | WebElement[slider]: get attribute 'max'
+2026-04-30 17:51:51 | INFO     | WebElement[slider]: attribute 'max' = '5.0'
+2026-04-30 17:54:23 | INFO     | Test: Starting slider test
+2026-04-30 17:54:29 | INFO     | SliderPage get min max
+2026-04-30 17:54:29 | INFO     | WebElement[slider]: get attribute 'min'
+2026-04-30 17:54:29 | INFO     | WebElement[slider]: attribute 'min' = '0.0'
+2026-04-30 17:54:29 | INFO     | WebElement[slider]: get attribute 'max'
+2026-04-30 17:54:29 | INFO     | WebElement[slider]: attribute 'max' = '5.0'
+2026-04-30 17:58:09 | INFO     | Test: Starting slider test
+2026-04-30 17:58:12 | INFO     | SliderPage get min max
+2026-04-30 17:58:12 | INFO     | WebElement[slider]: get attribute 'min'
+2026-04-30 17:58:12 | INFO     | WebElement[slider]: attribute 'min' = '0.0'
+2026-04-30 17:58:12 | INFO     | WebElement[slider]: get attribute 'max'
+2026-04-30 17:58:12 | INFO     | WebElement[slider]: attribute 'max' = '5.0'
+2026-04-30 17:58:12 | INFO     | SliderPage set value for keyboard
+2026-04-30 17:58:12 | INFO     | WebElement[slider]: focus
+2026-04-30 17:58:12 | INFO     | WebElement[slider]: press 'Home'
+2026-04-30 17:58:12 | INFO     | WebElement[slider]: get attribute 'min'
+2026-04-30 17:58:12 | INFO     | WebElement[slider]: attribute 'min' = '0.0'
+2026-04-30 18:06:49 | INFO     | Test: Starting slider test
+2026-04-30 18:06:52 | INFO     | SliderPage get min max
+2026-04-30 18:06:52 | INFO     | WebElement[slider]: get attribute 'min'
+2026-04-30 18:06:52 | INFO     | WebElement[slider]: attribute 'min' = '0.0'
+2026-04-30 18:06:52 | INFO     | WebElement[slider]: get attribute 'max'
+2026-04-30 18:06:52 | INFO     | WebElement[slider]: attribute 'max' = '5.0'
+2026-04-30 18:06:52 | INFO     | SliderPage set value for keyboard
+2026-04-30 18:06:52 | INFO     | WebElement[slider]: focus
+2026-04-30 18:06:52 | INFO     | WebElement[slider]: press 'Home'
+2026-04-30 18:06:52 | INFO     | WebElement[slider]: get attribute 'min'
+2026-04-30 18:06:52 | INFO     | WebElement[slider]: attribute 'min' = '0.0'
+2026-04-30 18:06:52 | INFO     | WebElement[slider]: get attribute 'step'
+2026-04-30 18:06:52 | INFO     | WebElement[slider]: attribute 'step' = '0.5'
+2026-04-30 18:08:33 | INFO     | Test: Starting slider test
+2026-04-30 18:08:35 | INFO     | SliderPage get min max
+2026-04-30 18:08:35 | INFO     | WebElement[slider]: get attribute 'min'
+2026-04-30 18:08:35 | INFO     | WebElement[slider]: attribute 'min' = '0.0'
+2026-04-30 18:08:35 | INFO     | WebElement[slider]: get attribute 'max'
+2026-04-30 18:08:35 | INFO     | WebElement[slider]: attribute 'max' = '5.0'
+2026-04-30 18:08:35 | INFO     | SliderPage set value for keyboard
+2026-04-30 18:08:35 | INFO     | WebElement[slider]: focus
+2026-04-30 18:08:35 | INFO     | WebElement[slider]: press 'Home'
+2026-04-30 18:08:35 | INFO     | WebElement[slider]: get attribute 'min'
+2026-04-30 18:08:35 | INFO     | WebElement[slider]: attribute 'min' = '0.0'
+2026-04-30 18:08:35 | INFO     | WebElement[slider]: get attribute 'step'
+2026-04-30 18:08:35 | INFO     | WebElement[slider]: attribute 'step' = '0.5'
+2026-04-30 18:11:23 | INFO     | Test: Starting slider test
+2026-04-30 18:11:25 | INFO     | SliderPage get min max
+2026-04-30 18:11:25 | INFO     | WebElement[slider]: get attribute 'min'
+2026-04-30 18:11:25 | INFO     | WebElement[slider]: attribute 'min' = '0.0'
+2026-04-30 18:11:25 | INFO     | WebElement[slider]: get attribute 'max'
+2026-04-30 18:11:25 | INFO     | WebElement[slider]: attribute 'max' = '5.0'
+2026-04-30 18:11:25 | INFO     | SliderPage set value for keyboard
+2026-04-30 18:11:25 | INFO     | WebElement[slider]: focus
+2026-04-30 18:11:25 | INFO     | WebElement[slider]: press 'Home'
+2026-04-30 18:11:25 | INFO     | WebElement[slider]: get attribute 'min'
+2026-04-30 18:11:25 | INFO     | WebElement[slider]: attribute 'min' = '0.0'
+2026-04-30 18:11:25 | INFO     | WebElement[slider]: get attribute 'step'
+2026-04-30 18:11:25 | INFO     | WebElement[slider]: attribute 'step' = '0.5'
+2026-04-30 18:11:25 | INFO     | WebElement[slider]: press 'ArrowRight'
+2026-04-30 18:11:25 | INFO     | WebElement[slider]: press 'ArrowRight'
+2026-04-30 18:11:25 | INFO     | WebElement[slider]: press 'ArrowRight'
+2026-04-30 18:11:25 | INFO     | WebElement[slider]: press 'ArrowRight'
+2026-04-30 18:11:25 | INFO     | SliderPage get display value
+2026-04-30 18:11:25 | INFO     | WebElement[slider value]: get text content
+2026-04-30 18:11:25 | INFO     | WebElement[slider value]: text content = '2'
+2026-04-30 18:16:36 | INFO     | Test: Starting slider test
+2026-04-30 18:16:38 | INFO     | SliderPage get min max
+2026-04-30 18:16:38 | INFO     | WebElement[slider]: get attribute 'min'
+2026-04-30 18:16:38 | INFO     | WebElement[slider]: attribute 'min' = '0.0'
+2026-04-30 18:16:38 | INFO     | WebElement[slider]: get attribute 'max'
+2026-04-30 18:16:38 | INFO     | WebElement[slider]: attribute 'max' = '5.0'
+2026-04-30 18:16:38 | INFO     | WebElement[slider]: get attribute 'step'
+2026-04-30 18:16:38 | INFO     | WebElement[slider]: attribute 'step' = '0.5'
+2026-04-30 18:16:38 | INFO     | SliderPage set value for keyboard
+2026-04-30 18:16:38 | INFO     | WebElement[slider]: focus
+2026-04-30 18:16:38 | INFO     | WebElement[slider]: press 'Home'
+2026-04-30 18:16:38 | INFO     | WebElement[slider]: get attribute 'min'
+2026-04-30 18:16:38 | INFO     | WebElement[slider]: attribute 'min' = '0.0'
+2026-04-30 18:16:38 | INFO     | WebElement[slider]: get attribute 'step'
+2026-04-30 18:16:38 | INFO     | WebElement[slider]: attribute 'step' = '0.5'
+2026-04-30 18:16:38 | INFO     | WebElement[slider]: press 'ArrowRight'
+2026-04-30 18:16:38 | INFO     | WebElement[slider]: press 'ArrowRight'
+2026-04-30 18:16:38 | INFO     | WebElement[slider]: press 'ArrowRight'
+2026-04-30 18:16:38 | INFO     | WebElement[slider]: press 'ArrowRight'
+2026-04-30 18:16:38 | INFO     | WebElement[slider]: press 'ArrowRight'
+2026-04-30 18:16:38 | INFO     | WebElement[slider]: press 'ArrowRight'
+2026-04-30 18:16:38 | INFO     | WebElement[slider]: press 'ArrowRight'
+2026-04-30 18:16:38 | INFO     | SliderPage get display value
+2026-04-30 18:16:38 | INFO     | WebElement[slider value]: get text content
+2026-04-30 18:16:38 | INFO     | WebElement[slider value]: text content = '3.5'
+2026-05-02 11:39:50 | INFO     | Test: Starting slider test
+2026-05-02 11:39:52 | INFO     | SliderPage get min max
+2026-05-02 11:39:52 | INFO     | WebElement[slider]: get attribute 'min'
+2026-05-02 11:39:52 | INFO     | WebElement[slider]: attribute 'min' = '0.0'
+2026-05-02 11:39:52 | INFO     | WebElement[slider]: get attribute 'max'
+2026-05-02 11:39:52 | INFO     | WebElement[slider]: attribute 'max' = '5.0'
+2026-05-02 11:39:52 | INFO     | WebElement[slider]: get attribute 'step'
+2026-05-02 11:39:52 | INFO     | WebElement[slider]: attribute 'step' = '0.5'
+2026-05-02 11:39:52 | INFO     | SliderPage set value for keyboard
+2026-05-02 11:39:52 | INFO     | WebElement[slider]: focus
+2026-05-02 11:39:52 | INFO     | WebElement[slider]: press 'Home'
+2026-05-02 11:39:52 | INFO     | WebElement[slider]: get attribute 'min'
+2026-05-02 11:39:52 | INFO     | WebElement[slider]: attribute 'min' = '0.0'
+2026-05-02 11:39:52 | INFO     | WebElement[slider]: get attribute 'step'
+2026-05-02 11:39:52 | INFO     | WebElement[slider]: attribute 'step' = '0.5'
+2026-05-02 11:39:52 | INFO     | WebElement[slider]: press 'ArrowRight'
+2026-05-02 11:39:52 | INFO     | WebElement[slider]: press 'ArrowRight'
+2026-05-02 11:39:52 | INFO     | WebElement[slider]: press 'ArrowRight'
+2026-05-02 11:39:52 | INFO     | SliderPage get display value
+2026-05-02 11:39:52 | INFO     | WebElement[slider value]: get text content
+2026-05-02 11:39:52 | INFO     | WebElement[slider value]: text content = '1.5'

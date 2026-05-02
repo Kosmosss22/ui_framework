@@ -33,6 +33,8 @@ class AlertsPage:
             page=page,
             description="Секция Result"
         )
+    def __str__(self):
+        return "AlertsPage"
 
     # Код повторяется, я это заметил, но пока не буду исправлять
     def trigger_alert(self):
