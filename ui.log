@@ -332,3 +332,34 @@
 2026-05-03 17:39:02 | INFO     | WebElement[Dynamic content images[2]]: get attribute 'src'
 2026-05-03 17:39:02 | INFO     | WebElement[Dynamic content images[2]]: attribute 'src' = '/img/avatars/Original-Facebook-Geek-Profile-Avatar-6.jpg'
 2026-05-03 17:39:02 | INFO     | DynamicContent page matching pair found
+2026-05-03 19:12:31 | INFO     | Test: Starting scroll test
+2026-05-03 19:12:33 | INFO     | Scroll page waiting for paragraphs
+2026-05-03 19:12:33 | INFO     | Scroll page get count paragraphs
+2026-05-03 19:12:33 | INFO     | Scroll page scroll to bottom
+2026-05-03 19:12:33 | INFO     | WebElement[all paragraphs[last]]: scroll into view if needed
+2026-05-03 19:12:33 | INFO     | Scroll page get count paragraphs
+2026-05-03 19:12:33 | INFO     | Scroll page scroll to bottom
+2026-05-03 19:12:33 | INFO     | WebElement[all paragraphs[last]]: scroll into view if needed
+2026-05-03 19:12:34 | INFO     | Scroll page get count paragraphs
+2026-05-03 19:12:34 | INFO     | Scroll page scroll to bottom
+2026-05-03 19:12:34 | INFO     | WebElement[all paragraphs[last]]: scroll into view if needed
+2026-05-03 19:12:34 | INFO     | Scroll page get count paragraphs
+2026-05-03 19:12:34 | INFO     | Scroll page scroll to bottom
+2026-05-03 19:12:34 | INFO     | WebElement[all paragraphs[last]]: scroll into view if needed
+2026-05-03 19:12:34 | INFO     | Scroll page get count paragraphs
+2026-05-03 19:12:34 | INFO     | Scroll page scroll to bottom
+2026-05-03 19:12:34 | INFO     | WebElement[all paragraphs[last]]: scroll into view if needed
+2026-05-03 19:12:35 | INFO     | Scroll page get count paragraphs
+2026-05-03 19:12:35 | INFO     | Scroll page scroll to bottom
+2026-05-03 19:12:35 | INFO     | WebElement[all paragraphs[last]]: scroll into view if needed
+2026-05-03 19:12:35 | INFO     | Scroll page get count paragraphs
+2026-05-03 19:12:35 | INFO     | Scroll page scroll to bottom
+2026-05-03 19:12:35 | INFO     | WebElement[all paragraphs[last]]: scroll into view if needed
+2026-05-03 19:12:36 | INFO     | Scroll page get count paragraphs
+2026-05-03 19:12:36 | INFO     | Scroll page scroll to bottom
+2026-05-03 19:12:36 | INFO     | WebElement[all paragraphs[last]]: scroll into view if needed
+2026-05-03 19:12:36 | INFO     | Scroll page get count paragraphs
+2026-05-03 19:12:36 | INFO     | Scroll page scroll to bottom
+2026-05-03 19:12:36 | INFO     | WebElement[all paragraphs[last]]: scroll into view if needed
+2026-05-03 19:12:36 | INFO     | Scroll page get count paragraphs
+2026-05-03 19:12:36 | INFO     | Scroll page get count paragraphs
