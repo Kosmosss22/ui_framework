@@ -22,6 +22,9 @@ class WindowsPage:
             description="New Window"
         )
 
+    def __str__(self):
+        return "WindowsPage"
+
     def click_here(self):
         logger.info(f"{self} click here link")
         self.click_here_link.click()
