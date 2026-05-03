@@ -1,4 +1,4 @@
-from pages.context_click import ContextClick
+from pages.context_click_page import ContextClick
 from logger import LOGGER_NAME
 import logging
 

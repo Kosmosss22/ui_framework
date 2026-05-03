@@ -312,3 +312,23 @@
 2026-05-03 16:56:51 | INFO     | FramePage get text from frame frame-right
 2026-05-03 16:56:51 | INFO     | FramePage get text from frame frame-middle
 2026-05-03 16:56:51 | INFO     | FramePage get text from frame frame-bottom
+2026-05-03 17:38:57 | INFO     | TEST: Starting dynamic content test
+2026-05-03 17:39:01 | INFO     | DynamicContent page waiting for matching img
+2026-05-03 17:39:01 | INFO     | DynamicContent page try to get pair
+2026-05-03 17:39:01 | INFO     | DynamicContent page get all src
+2026-05-03 17:39:01 | INFO     | WebElement[Dynamic content images[0]]: get attribute 'src'
+2026-05-03 17:39:01 | INFO     | WebElement[Dynamic content images[0]]: attribute 'src' = '/img/avatars/Original-Facebook-Geek-Profile-Avatar-3.jpg'
+2026-05-03 17:39:01 | INFO     | WebElement[Dynamic content images[1]]: get attribute 'src'
+2026-05-03 17:39:01 | INFO     | WebElement[Dynamic content images[1]]: attribute 'src' = '/img/avatars/Original-Facebook-Geek-Profile-Avatar-1.jpg'
+2026-05-03 17:39:01 | INFO     | WebElement[Dynamic content images[2]]: get attribute 'src'
+2026-05-03 17:39:01 | INFO     | WebElement[Dynamic content images[2]]: attribute 'src' = '/img/avatars/Original-Facebook-Geek-Profile-Avatar-6.jpg'
+2026-05-03 17:39:01 | INFO     | DynamicContent page not mtching pair yeat
+2026-05-03 17:39:02 | INFO     | DynamicContent page try to get pair
+2026-05-03 17:39:02 | INFO     | DynamicContent page get all src
+2026-05-03 17:39:02 | INFO     | WebElement[Dynamic content images[0]]: get attribute 'src'
+2026-05-03 17:39:02 | INFO     | WebElement[Dynamic content images[0]]: attribute 'src' = '/img/avatars/Original-Facebook-Geek-Profile-Avatar-6.jpg'
+2026-05-03 17:39:02 | INFO     | WebElement[Dynamic content images[1]]: get attribute 'src'
+2026-05-03 17:39:02 | INFO     | WebElement[Dynamic content images[1]]: attribute 'src' = '/img/avatars/Original-Facebook-Geek-Profile-Avatar-1.jpg'
+2026-05-03 17:39:02 | INFO     | WebElement[Dynamic content images[2]]: get attribute 'src'
+2026-05-03 17:39:02 | INFO     | WebElement[Dynamic content images[2]]: attribute 'src' = '/img/avatars/Original-Facebook-Geek-Profile-Avatar-6.jpg'
+2026-05-03 17:39:02 | INFO     | DynamicContent page matching pair found
