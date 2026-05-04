@@ -385,3 +385,9 @@
 2026-05-04 16:25:25 | INFO     | UploadPage get result text
 2026-05-04 16:25:25 | INFO     | WebElement[Result message]: get inner text
 2026-05-04 16:25:25 | INFO     | WebElement[Result message]: inner text = 'File Uploaded!'
+2026-05-04 16:53:09 | INFO     | TEST: Starting download test
+2026-05-04 16:53:11 | INFO     | DownloadPage get file name
+2026-05-04 16:53:11 | INFO     | WebElement[list files[2]]: get inner text
+2026-05-04 16:53:11 | INFO     | WebElement[list files[2]]: inner text = 'sampleFile.txt'
+2026-05-04 16:53:11 | INFO     | DownloadPage download file at index 2
+2026-05-04 16:53:12 | INFO     | WebElement[list files[2]] click on element: <Locator frame=<Frame name= url='https://the-internet.herokuapp.com/download'> selector="a[href^='download/'] >> nth=2">
