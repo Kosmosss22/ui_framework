@@ -363,3 +363,25 @@
 2026-05-03 19:12:36 | INFO     | WebElement[all paragraphs[last]]: scroll into view if needed
 2026-05-03 19:12:36 | INFO     | Scroll page get count paragraphs
 2026-05-03 19:12:36 | INFO     | Scroll page get count paragraphs
+2026-05-04 16:18:33 | INFO     | TEST: Starting upload file test
+2026-05-04 16:18:35 | INFO     | UploadPage upload and submit file
+2026-05-04 16:18:35 | INFO     | WebElement[file_upload]: set input files 'test_files/test.txt'
+2026-05-04 16:19:04 | INFO     | TEST: Starting upload file test
+2026-05-04 16:19:07 | INFO     | UploadPage upload and submit file
+2026-05-04 16:19:07 | INFO     | WebElement[file_upload]: set input files 'test_files/test.txt'
+2026-05-04 16:20:52 | INFO     | TEST: Starting upload file test
+2026-05-04 16:20:54 | INFO     | UploadPage upload and submit file
+2026-05-04 16:20:54 | INFO     | WebElement[file_upload]: set input files 'test_files/test.txt'
+2026-05-04 16:21:13 | INFO     | TEST: Starting upload file test
+2026-05-04 16:21:15 | INFO     | UploadPage upload and submit file
+2026-05-04 16:21:15 | INFO     | WebElement[file_upload]: set input files 'test_files/test.txt'
+2026-05-04 16:24:52 | INFO     | TEST: Starting upload file test
+2026-05-04 16:24:54 | INFO     | UploadPage upload and submit file
+2026-05-04 16:24:54 | INFO     | WebElement[file_upload]: set input files 'test_files/test.txt'
+2026-05-04 16:25:23 | INFO     | TEST: Starting upload file test
+2026-05-04 16:25:25 | INFO     | UploadPage upload and submit file
+2026-05-04 16:25:25 | INFO     | WebElement[file_upload]: set input files 'test_files/test'
+2026-05-04 16:25:25 | INFO     | WebElement[submit button] click on element: <Locator frame=<Frame name= url='https://the-internet.herokuapp.com/upload'> selector='#file-submit'>
+2026-05-04 16:25:25 | INFO     | UploadPage get result text
+2026-05-04 16:25:25 | INFO     | WebElement[Result message]: get inner text
+2026-05-04 16:25:25 | INFO     | WebElement[Result message]: inner text = 'File Uploaded!'
