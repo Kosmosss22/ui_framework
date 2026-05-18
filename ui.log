@@ -404,3 +404,24 @@
 2026-05-18 14:45:23 | INFO     | PageActions: expect dialog
 2026-05-18 14:45:23 | INFO     | WebElement[div for right click] right click on element: <Locator frame=<Frame name= url='https://the-internet.herokuapp.com/context_menu'> selector='#hot-spot'>
 2026-05-18 14:45:23 | INFO     | PageActions: dialog 'alert' with message 'You selected a context menu'
+2026-05-18 14:55:26 | INFO     | TEST: Starting frames test
+2026-05-18 14:55:28 | INFO     | FramePage get text from frame frame-left
+2026-05-18 14:58:32 | INFO     | TEST: Starting frames test
+2026-05-18 14:58:35 | INFO     | FramePage get text from frame frame-left
+2026-05-18 14:59:54 | INFO     | TEST: Starting frames test
+2026-05-18 14:59:56 | INFO     | FramePage get text from frame frame-left
+2026-05-18 15:12:22 | INFO     | TEST: Starting frames test
+2026-05-18 15:12:25 | INFO     | FramePage get text from frame frame-left
+2026-05-18 15:14:19 | INFO     | TEST: Starting frames test
+2026-05-18 15:14:20 | INFO     | FramePage get text from frame frame-left
+2026-05-18 15:17:19 | INFO     | TEST: Starting frames test
+2026-05-18 15:17:20 | INFO     | FramePage get text from frame
+2026-05-18 15:19:20 | INFO     | TEST: Starting frames test
+2026-05-18 15:19:21 | INFO     | FramePage get text from frame
+2026-05-18 15:19:46 | INFO     | TEST: Starting frames test
+2026-05-18 15:19:48 | INFO     | FramePage get text from frame
+2026-05-18 15:22:03 | INFO     | TEST: Starting frames test
+2026-05-18 15:22:04 | INFO     | FramePage get text from frame
+2026-05-18 15:22:04 | INFO     | FramePage get text from frame
+2026-05-18 15:22:04 | INFO     | FramePage get text from frame
+2026-05-18 15:22:04 | INFO     | FramePage get text from frame

@@ -2,7 +2,7 @@ import logging
 from logger import LOGGER_NAME
 from components.multi_web_element import MultiWebElement
 
-logger = logging.getLogger(LOGGER_NAME)\
+logger = logging.getLogger(LOGGER_NAME)
 
 class DownloadPage:
     def __init__(self, page):

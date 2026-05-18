@@ -7,17 +7,18 @@ logger = logging.getLogger(LOGGER_NAME)
 
 def test_frames(page):
     logger.info("TEST: Starting frames test")
+
     frames_page = FramePage(page)
-    url = "https://the-internet.herokuapp.com/nested_frames"
-    page.goto(url)
+    page.goto("https://the-internet.herokuapp.com/nested_frames")
 
     frames_data = {
-        frames_page.LEFT_FRAME: "LEFT",
-        frames_page.RIGHT_FRAME: "RIGHT",
-        frames_page.MIDDLE_FRAME: "MIDDLE",
-        frames_page.BOTTOM_FRAME: "BOTTOM",
+        frames_page.left_frame: "LEFT",
+        frames_page.right_frame: "RIGHT",
+        frames_page.middle_frame: "MIDDLE",
+        frames_page.bottom_frame: "BOTTOM",
     }
 
-    for frame_name, expected_text in frames_data.items():
-        text = frames_page.get_text_from_frame(frame_name)
+    for frame_locator, expected_text in frames_data.items():
+        text = frames_page.get_text_from_frame(frame_locator)
+
         assert text == expected_text
