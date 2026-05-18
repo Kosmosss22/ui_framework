@@ -398,3 +398,9 @@
     Congratulations! You must have the proper credentials.
   '
 2026-05-18 14:38:03 | INFO     | TEST: basic auth scenarios passed
+2026-05-18 14:45:20 | INFO     | TEST: Starting context click test
+2026-05-18 14:45:23 | INFO     | ContextClickPage right click and get alert
+2026-05-18 14:45:23 | INFO     | PageActions: accept dialog
+2026-05-18 14:45:23 | INFO     | PageActions: expect dialog
+2026-05-18 14:45:23 | INFO     | WebElement[div for right click] right click on element: <Locator frame=<Frame name= url='https://the-internet.herokuapp.com/context_menu'> selector='#hot-spot'>
+2026-05-18 14:45:23 | INFO     | PageActions: dialog 'alert' with message 'You selected a context menu'
