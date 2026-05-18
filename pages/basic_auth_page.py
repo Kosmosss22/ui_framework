@@ -18,11 +18,6 @@ class BasicAuthPage:
     def __str__(self):
         return "BasicAuthPage"
 
-    def login_and_open(self, login, password):
-        logger.info(f"{self} redirect to login page")
-        url = f"https://{login}:{password}@the-internet.herokuapp.com/basic_auth"
-        self.page.goto(url)
-
     def get_success_message(self):
         logger.info(f"{self} get text content")
         return self.success_message.get_text_content()

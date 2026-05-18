@@ -10,19 +10,19 @@ class AlertsPage:
         self.page = page
 
         self.button_js_alert = WebElement(
-            locator=page.locator('button:has-text("Click for JS Alert")'),
+            locator=page.getByRole("button", name="Click for JS Alert"),
             page=page,
             description="Кнопка JS Alert"
         )
 
         self.button_js_confirm = WebElement(
-            locator=page.locator('button:has-text("Click for JS Confirm")'),
+            locator=page.getByRole("button", name="Click for JS Confirm"),
             page=page,
             description="Кнопка JS Confirm"
         )
 
         self.button_js_prompt = WebElement(
-            locator=page.locator('button:has-text("Click for JS Prompt")'),
+            locator=page.getByRole("button", name="Click for JS Prompt"),
             page=page,
             description="Кнопка JS Prompt"
         )
@@ -49,5 +49,4 @@ class AlertsPage:
         self.button_js_prompt.click()
 
     def get_result_text(self):
-        logger.info(f"{self} get result text")
         return self.result_message.get_text_content()

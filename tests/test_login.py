@@ -6,10 +6,13 @@ logger = logging.getLogger(LOGGER_NAME)
 
 def test_basic_auth(page):
     logger.info("TEST: Starting basic auth test")
+
     auth_page = BasicAuthPage(page)
+    login = "admin"
+    password = "admin"
+    url = f"https://{login}:{password}@the-internet.herokuapp.com/basic_auth"
 
-    auth_page.login_and_open("admin", "admin")
-
+    page.goto(url)
     message = auth_page.get_success_message()
 
     assert "Congratulations! You must have the proper credentials." in message
