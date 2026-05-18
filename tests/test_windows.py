@@ -33,4 +33,5 @@ def test_windows(page):
     page_1.close()
     page_2.close()
 
-    assert len(page.context.pages) == 1
+    open_pages = actions.get_open_pages_count()
+    assert open_pages == 1, f"Expected 1 open page, but got {open_pages}"

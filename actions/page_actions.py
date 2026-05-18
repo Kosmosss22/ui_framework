@@ -16,6 +16,10 @@ class PageActions:
         logger.info(f"PageActions: goto '{url}'")
         self.page.goto(url)
 
+    def get_open_pages_count(self) -> int:
+        logger.info(f"PageActions: get open pages count")
+        return len(self.page.context.pages)
+
     def expect_new_page(self):
         logger.info("PageActions: expect new page")
         return self.page.context.expect_page()

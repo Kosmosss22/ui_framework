@@ -1093,3 +1093,17 @@
 2026-05-18 16:05:53 | INFO     | WebElement[Секция Result]: get text content
 2026-05-18 16:05:53 | INFO     | WebElement[Секция Result]: text content = 'You entered: attack'
 2026-05-18 16:05:53 | INFO     | TEST: All alert scenarios passed
+2026-05-18 16:12:08 | INFO     | TEST: Starting windows test
+2026-05-18 16:12:12 | INFO     | PageActions: expect new page
+2026-05-18 16:12:12 | INFO     | WindowsPage click here link
+2026-05-18 16:12:12 | INFO     | WebElement[Link: 'Click Here'] click on element: <Locator frame=<Frame name= url='https://the-internet.herokuapp.com/windows'> selector='.example a'>
+2026-05-18 16:12:12 | INFO     | WindowsPage get text from new window
+2026-05-18 16:12:12 | INFO     | WebElement[New Window]: get inner text
+2026-05-18 16:12:12 | INFO     | WebElement[New Window]: inner text = 'New Window'
+2026-05-18 16:12:12 | INFO     | PageActions: expect new page
+2026-05-18 16:12:12 | INFO     | WindowsPage click here link
+2026-05-18 16:12:12 | INFO     | WebElement[Link: 'Click Here'] click on element: <Locator frame=<Frame name= url='https://the-internet.herokuapp.com/windows'> selector='.example a'>
+2026-05-18 16:12:12 | INFO     | WindowsPage get text from new window
+2026-05-18 16:12:12 | INFO     | WebElement[New Window]: get inner text
+2026-05-18 16:12:12 | INFO     | WebElement[New Window]: inner text = 'New Window'
+2026-05-18 16:12:12 | INFO     | PageActions: get open pages count
