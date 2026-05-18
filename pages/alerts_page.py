@@ -10,19 +10,19 @@ class AlertsPage:
         self.page = page
 
         self.button_js_alert = WebElement(
-            locator=page.getByRole("button", name="Click for JS Alert"),
+            locator=page.get_by_role("button", name="Click for JS Alert"),
             page=page,
             description="Кнопка JS Alert"
         )
 
         self.button_js_confirm = WebElement(
-            locator=page.getByRole("button", name="Click for JS Confirm"),
+            locator=page.get_by_role("button", name="Click for JS Confirm"),
             page=page,
             description="Кнопка JS Confirm"
         )
 
         self.button_js_prompt = WebElement(
-            locator=page.getByRole("button", name="Click for JS Prompt"),
+            locator=page.get_by_role("button", name="Click for JS Prompt"),
             page=page,
             description="Кнопка JS Prompt"
         )

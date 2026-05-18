@@ -1069,3 +1069,27 @@
 2026-05-18 15:56:40 | INFO     | WebElement[all paragraphs[last]]: scroll into view if needed
 2026-05-18 15:56:40 | INFO     | Scroll page get count paragraphs
 2026-05-18 15:56:40 | INFO     | Scroll page get count paragraphs
+2026-05-18 16:04:16 | INFO     | TEST: Starting alerts test
+2026-05-18 16:05:50 | INFO     | TEST: Starting alerts test
+2026-05-18 16:05:53 | INFO     | PageActions: accept dialog
+2026-05-18 16:05:53 | INFO     | PageActions: expect dialog
+2026-05-18 16:05:53 | INFO     | AlertsPage Click for JS Alert
+2026-05-18 16:05:53 | INFO     | WebElement[Кнопка JS Alert] click on element: <Locator frame=<Frame name= url='https://the-internet.herokuapp.com/javascript_alerts'> selector='internal:role=button[name="Click for JS Alert"i]'>
+2026-05-18 16:05:53 | INFO     | PageActions: dialog 'alert' with message 'I am a JS Alert'
+2026-05-18 16:05:53 | INFO     | WebElement[Секция Result]: get text content
+2026-05-18 16:05:53 | INFO     | WebElement[Секция Result]: text content = 'You successfully clicked an alert'
+2026-05-18 16:05:53 | INFO     | PageActions: accept dialog
+2026-05-18 16:05:53 | INFO     | PageActions: expect dialog
+2026-05-18 16:05:53 | INFO     | AlertsPage Click for JS Confirm
+2026-05-18 16:05:53 | INFO     | WebElement[Кнопка JS Confirm] click on element: <Locator frame=<Frame name= url='https://the-internet.herokuapp.com/javascript_alerts'> selector='internal:role=button[name="Click for JS Confirm"i]'>
+2026-05-18 16:05:53 | INFO     | PageActions: dialog 'confirm' with message 'I am a JS Confirm'
+2026-05-18 16:05:53 | INFO     | WebElement[Секция Result]: get text content
+2026-05-18 16:05:53 | INFO     | WebElement[Секция Result]: text content = 'You clicked: Ok'
+2026-05-18 16:05:53 | INFO     | PageActions: accept prompt
+2026-05-18 16:05:53 | INFO     | PageActions: expect dialog
+2026-05-18 16:05:53 | INFO     | AlertsPage click and fill prompt
+2026-05-18 16:05:53 | INFO     | WebElement[Кнопка JS Prompt] click on element: <Locator frame=<Frame name= url='https://the-internet.herokuapp.com/javascript_alerts'> selector='internal:role=button[name="Click for JS Prompt"i]'>
+2026-05-18 16:05:53 | INFO     | PageActions: dialog 'prompt' with message 'I am a JS prompt'
+2026-05-18 16:05:53 | INFO     | WebElement[Секция Result]: get text content
+2026-05-18 16:05:53 | INFO     | WebElement[Секция Result]: text content = 'You entered: attack'
+2026-05-18 16:05:53 | INFO     | TEST: All alert scenarios passed
