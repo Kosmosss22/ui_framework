@@ -37,7 +37,14 @@ class ScrollPage:
                 return True
 
             self.scroll_to_bottom()
-            self.page.wait_for_timeout(300)
+
+            try:
+                self.page.wait_for_function(
+                    f"document.querySelectorAll('.jscroll-added').length > {current_paragraphs}",
+                    timeout= 300
+                )
+            except Exception:
+                pass
 
         final_count = self.get_paragraphs_count()
         raise RuntimeError(f"Final count: {final_count}")
