@@ -18,7 +18,6 @@ class DownloadPage:
         return "DownloadPage"
 
     def get_file_name(self, index):
-        logger.info(f"{self} get file name")
         file_element = self.list_files.nth(index)
         return file_element.get_inner_text()
 

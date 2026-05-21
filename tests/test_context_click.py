@@ -11,5 +11,9 @@ def test_context_click(page):
     page.goto(url)
 
     alert_text = context_page.perform_right_click_and_get_alert()
-
-    assert alert_text == "You selected a context menu"
+    expected_text = "You selected a context menu"
+    assert alert_text == expected_text, (
+        f"Alert text mismatch:\n"
+        f"  Expected: '{expected_text}'\n"
+        f"  Actual:   '{alert_text}'"
+    )

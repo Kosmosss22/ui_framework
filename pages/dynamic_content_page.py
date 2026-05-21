@@ -6,6 +6,9 @@ logger = logging.getLogger(LOGGER_NAME)
 
 
 class DynamicContent:
+
+    MAX_RETRIES = 10
+
     def __init__(self, page):
         self.page = page
 
@@ -15,26 +18,26 @@ class DynamicContent:
             description="Dynamic content images"
         )
 
-        self.MAX_RETRIES = 10
 
     def __str__(self):
         return "DynamicContent page"
 
     def get_images_src(self):
-        logger.info(f"{self} get all src")
         return [element.get_attribute("src") for element in self.images.all()]
 
     def has_matching_pair(self):
-        logger.info(f"{self} try to get pair")
         all_src = self.get_images_src()
         has_matching = len(all_src) != len(set(all_src))
 
         return has_matching
 
-    def wait_for_matching_images(self):
+    def wait_for_matching_images(self, max_tries=None):
         logger.info(f"{self} waiting for matching img")
 
-        for try_cnt in range(self.MAX_RETRIES):
+        if max_tries is None:
+            max_tries = self.MAX_RETRIES
+
+        for try_cnt in range(max_tries):
 
             if try_cnt > 0:
                 self.page.reload()
@@ -46,4 +49,4 @@ class DynamicContent:
 
             logger.info(f"{self} not mtching pair yeat")
 
-        raise RuntimeError(f"no matching pair after {self.MAX_RETRIES}")
+        raise RuntimeError(f"no matching pair after {max_tries}")

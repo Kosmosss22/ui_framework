@@ -1,8 +1,4 @@
-import logging
-from logger import LOGGER_NAME
 from components.webelement import WebElement
-
-logger = logging.getLogger(LOGGER_NAME)
 
 
 class AlertsPage:
@@ -37,15 +33,12 @@ class AlertsPage:
         return "AlertsPage"
 
     def trigger_alert(self):
-        logger.info(f"{self} Click for JS Alert")
         self.button_js_alert.click()
 
     def trigger_confirm(self):
-        logger.info(f"{self} Click for JS Confirm")
         self.button_js_confirm.click()
 
     def trigger_prompt(self):
-        logger.info(f"{self} click and fill prompt")
         self.button_js_prompt.click()
 
     def get_result_text(self):

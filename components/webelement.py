@@ -1,6 +1,6 @@
 import logging
 from playwright.sync_api import Page, Locator
-from  logger import LOGGER_NAME
+from logger import LOGGER_NAME
 
 logger = logging.getLogger(LOGGER_NAME)
 
@@ -68,4 +68,3 @@ class WebElement:
         logger.info(f"{self}: waiting for visible")
         self.locator.wait_for(state="visible", timeout=timeout)
         logger.info(f"{self}: is visible")
-        return self

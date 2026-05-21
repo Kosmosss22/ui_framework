@@ -1,8 +1,5 @@
-import logging
-from logger import LOGGER_NAME
 from components.webelement import WebElement
 
-logger = logging.getLogger(LOGGER_NAME)
 
 class SliderPage:
     def __init__(self, page):
@@ -24,7 +21,6 @@ class SliderPage:
         return "SliderPage"
 
     def get_slider_min_max(self):
-        logger.info(f"{self} get min max")
         get_min = self.slider.get_attribute("min")
         get_max = self.slider.get_attribute("max")
 
@@ -35,7 +31,6 @@ class SliderPage:
         return float(step) if step else 0.5
 
     def set_value_keyboard(self, target_value):
-        logger.info(f"{self} set value for keyboard")
         self.slider.focus()
         self.slider.press("Home")
 
@@ -48,5 +43,4 @@ class SliderPage:
             self.slider.press("ArrowRight")
 
     def get_displayed_value(self):
-        logger.info(f"{self} get display value")
         return self.slider_value.get_text_content()

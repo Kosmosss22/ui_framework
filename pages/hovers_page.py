@@ -29,12 +29,10 @@ class HoversPage:
         return self.user_imgs.count()
 
     def hover_over_user(self, index):
-        logger.info(f"{self} hover over user[{index}]")
         user_img = self.user_imgs.nth(index)
         user_img.hover()
         self.user_names.nth(index).wait_for_visible()
 
     def get_user_name(self, index):
-        logger.info(f"{self} get user name")
         get_name = self.user_names.nth(index)
         return get_name.get_inner_text()

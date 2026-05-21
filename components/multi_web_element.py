@@ -14,6 +14,13 @@ class MultiWebElement:
         self.description = description
         self.index = 0
 
+    def _make_element(self, locator: Locator, suffix: str) -> WebElement:
+        return WebElement(
+            locator=locator,
+            page=self.page,
+            description=f"{self.description}[{suffix}]",
+        )
+
     def __iter__(self) -> Self:
         self.index = 0
         return self
@@ -32,24 +39,21 @@ class MultiWebElement:
         return element
 
     def nth(self, index: int) -> WebElement:
-        return WebElement(
+        return self._make_element(
             locator=self.locator.nth(index),
-            page=self.page,
-            description=f"{self.description}[{index}]",
+            suffix=str(index)
         )
 
     def first(self) -> WebElement:
-        return WebElement(
+        return self._make_element(
             locator=self.locator.first,
-            page=self.page,
-            description=f"{self.description}[first]",
+            suffix="first"
         )
 
     def last(self) -> WebElement:
-        return WebElement(
+        return self._make_element(
             locator=self.locator.last,
-            page=self.page,
-            description=f"{self.description}[last]",
+            suffix="last"
         )
 
     def count(self) -> int:
@@ -57,11 +61,7 @@ class MultiWebElement:
 
     def all(self) -> list[WebElement]:
         return [
-            WebElement(
-                locator=loc,
-                page=self.page,
-                description=f"{self.description}[{i}]",
-            )
+            self._make_element(locator=loc, suffix=str(i))
             for i, loc in enumerate(self.locator.all())
         ]
 

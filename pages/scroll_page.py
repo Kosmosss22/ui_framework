@@ -1,4 +1,7 @@
 import logging
+
+from playwright.sync_api import expect
+
 from components.multi_web_element import MultiWebElement
 from logger import LOGGER_NAME
 
@@ -24,12 +27,10 @@ class ScrollPage:
         return cnt
 
     def scroll_to_bottom(self):
-        logger.info(f"{self} scroll to bottom")
         last_paragraph = self.paragraphs.last()
         last_paragraph.scroll_into_view_if_needed()
 
     def wait_for_paragraphs(self, target_count=10):
-        logger.info(f"{self} waiting for paragraphs")
         max_attempts = 20
         for _ in range(max_attempts):
             current_paragraphs = self.get_paragraphs_count()
@@ -39,11 +40,11 @@ class ScrollPage:
             self.scroll_to_bottom()
 
             try:
-                self.page.wait_for_function(
-                    f"document.querySelectorAll('.jscroll-added').length > {current_paragraphs}",
-                    timeout= 300
+                expect(self.paragraphs.locator).to_have_count(
+                    current_paragraphs + 1,
+                    timeout=300
                 )
-            except Exception:
+            except AssertionError:
                 pass
 
         final_count = self.get_paragraphs_count()

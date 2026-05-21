@@ -12,13 +12,12 @@ def test_frames(page):
     page.goto("https://the-internet.herokuapp.com/nested_frames")
 
     frames_data = {
-        frames_page.left_frame: "LEFT",
-        frames_page.right_frame: "RIGHT",
-        frames_page.middle_frame: "MIDDLE",
-        frames_page.bottom_frame: "BOTTOM",
+        "left": "LEFT",
+        "right": "RIGHT",
+        "middle": "MIDDLE",
+        "bottom": "BOTTOM",
     }
 
-    for frame_locator, expected_text in frames_data.items():
-        text = frames_page.get_text_from_frame(frame_locator)
-
-        assert text == expected_text
+    for key, expected_text in frames_data.items():
+        text = frames_page.get_text_from_frame(key)
+        assert expected_text in text

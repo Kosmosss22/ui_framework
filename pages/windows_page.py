@@ -1,9 +1,4 @@
-import logging
 from components.webelement import WebElement
-from logger import LOGGER_NAME
-
-
-logger = logging.getLogger(LOGGER_NAME)
 
 
 class WindowsPage:
@@ -26,9 +21,7 @@ class WindowsPage:
         return "WindowsPage"
 
     def click_here(self):
-        logger.info(f"{self} click here link")
         self.click_here_link.click()
 
     def get_new_window_text(self):
-        logger.info(f"{self} get text from new window")
         return self.new_window_text.get_inner_text()

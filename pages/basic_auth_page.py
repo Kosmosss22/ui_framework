@@ -1,9 +1,4 @@
-import logging
-from logger import LOGGER_NAME
 from components.webelement import WebElement
-
-
-logger = logging.getLogger(LOGGER_NAME)
 
 
 class BasicAuthPage:
@@ -19,5 +14,4 @@ class BasicAuthPage:
         return "BasicAuthPage"
 
     def get_success_message(self):
-        logger.info(f"{self} get text content")
         return self.success_message.get_text_content()
