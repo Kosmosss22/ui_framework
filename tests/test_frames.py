@@ -20,4 +20,8 @@ def test_frames(page):
 
     for key, expected_text in frames_data.items():
         text = frames_page.get_text_from_frame(key)
-        assert expected_text in text
+        assert expected_text in text, (
+            f"Text mismatch in frame '{frame_key}':\n"
+            f"  Expected: '{expected_text}'\n"
+            f"  Actual:   '{text}'"
+        )

@@ -29,10 +29,9 @@ class MultiWebElement:
         if self.index >= self.locator.count():
             raise StopIteration
 
-        element = WebElement(
+        element = self._make_element(
             locator=self.locator.nth(self.index),
-            page=self.page,
-            description=f"{self.description}[{self.index}]",
+            suffix=str(self.index)
         )
 
         self.index += 1

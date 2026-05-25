@@ -1,5 +1,6 @@
 from actions.page_actions import PageActions
 from pages.windows_page import WindowsPage
+from pages.new_window_page import NewWindowPage
 from logger import LOGGER_NAME
 import logging
 
@@ -20,15 +21,26 @@ def test_windows(page):
     page_1 = event_1.value
     win_1 = WindowsPage(page_1)
     text_1 = win_1.get_new_window_text()
-    assert "New Window" in text_1
+    expected_text = "New Window"
+
+    assert expected_text in text_1, (
+        f"Text in first new window mismatch:\n"
+        f"  Expected: '{expected_text}'\n"
+        f"  Actual:   '{text_1}'"
+    )
 
     with actions.expect_new_page() as event_2:
         windows_page.click_here()
 
     page_2 = event_2.value
-    win_2 = WindowsPage(page_2)
-    text_2 = win_2.get_new_window_text()
-    assert "New Window" in text_2
+    win_2 = NewWindowPage(page_2)
+    text_2 = win_2.get_heading_text()
+
+    assert expected_text in text_2, (
+        f"Text in second new window mismatch:\n"
+        f"  Expected: '{expected_text}'\n"
+        f"  Actual:   '{text_2}'"
+    )
 
     page_1.close()
     page_2.close()
