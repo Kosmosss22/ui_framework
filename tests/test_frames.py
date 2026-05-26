@@ -1,4 +1,4 @@
-from pages.frames_page import FramePage
+from pages.frames_page import FramePage, FrameType  # ← Импортируем Enum
 from logger import LOGGER_NAME
 import logging
 
@@ -10,18 +10,19 @@ def test_frames(page):
 
     frames_page = FramePage(page)
     page.goto("https://the-internet.herokuapp.com/nested_frames")
+    page.wait_for_load_state("networkidle")
 
     frames_data = {
-        "left": "LEFT",
-        "right": "RIGHT",
-        "middle": "MIDDLE",
-        "bottom": "BOTTOM",
+        FrameType.LEFT: "LEFT",
+        FrameType.RIGHT: "RIGHT",
+        FrameType.MIDDLE: "MIDDLE",
+        FrameType.BOTTOM: "BOTTOM",
     }
 
-    for key, expected_text in frames_data.items():
-        text = frames_page.get_text_from_frame(key)
+    for frame_type, expected_text in frames_data.items():
+        text = frames_page.get_text_from_frame(frame_type)
         assert expected_text in text, (
-            f"Text mismatch in frame '{frame_key}':\n"
+            f"Text mismatch in frame '{frame_type.value}':\n"
             f"  Expected: '{expected_text}'\n"
             f"  Actual:   '{text}'"
         )

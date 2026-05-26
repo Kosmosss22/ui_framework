@@ -24,7 +24,9 @@ class DownloadPage:
     def download_file(self, index):
         logger.info(f"{self} download file at index {index}")
         file_element = self.list_files.nth(index)
+        logger.info(f"{self} clicking on file: '{file_element}'")
 
+        logger.info(f'{self} waiting for download')
         with self.page.expect_download() as download:
             file_element.click()
 

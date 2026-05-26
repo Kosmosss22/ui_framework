@@ -68,3 +68,7 @@ class WebElement:
         logger.info(f"{self}: waiting for visible")
         self.locator.wait_for(state="visible", timeout=timeout)
         logger.info(f"{self}: is visible")
+
+    def wait_for(self, state="visible", timeout=None):
+        logger.info(f"{self}: wait_for state='{state}'")
+        self.locator.wait_for(state=state, timeout=timeout)

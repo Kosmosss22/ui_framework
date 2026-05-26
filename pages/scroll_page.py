@@ -1,7 +1,5 @@
 import logging
-
-from playwright.sync_api import expect
-
+from playwright.sync_api import TimeoutError as PlaywrightTimeoutError
 from components.multi_web_element import MultiWebElement
 from logger import LOGGER_NAME
 
@@ -22,9 +20,8 @@ class ScrollPage:
         return "Scroll page"
 
     def get_paragraphs_count(self):
-        logger.info(f"{self} get count paragraphs")
-        cnt = self.paragraphs.count()
-        return cnt
+        logger.info(f"{self}: get count paragraphs")
+        return self.paragraphs.count()
 
     def scroll_to_bottom(self):
         last_paragraph = self.paragraphs.last()
@@ -32,20 +29,22 @@ class ScrollPage:
 
     def wait_for_paragraphs(self, target_count=10):
         max_attempts = 20
+
         for _ in range(max_attempts):
             current_paragraphs = self.get_paragraphs_count()
+
             if current_paragraphs >= target_count:
                 return True
 
             self.scroll_to_bottom()
 
             try:
-                expect(self.paragraphs.locator).to_have_count(
-                    current_paragraphs + 1,
+                self.paragraphs.nth(current_paragraphs).wait_for(
+                    state="visible",
                     timeout=300
                 )
-            except AssertionError:
-                pass
+            except PlaywrightTimeoutError:
+                logger.info(f"{self}: new paragraph not loaded yet")
 
         final_count = self.get_paragraphs_count()
         raise RuntimeError(f"Final count: {final_count}")
