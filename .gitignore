@@ -33,3 +33,7 @@ htmlcov/
 
 # Playwright
 .playwright/
+
+# Logs
+*.log
+logs/

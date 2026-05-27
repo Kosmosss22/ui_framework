@@ -1,0 +1,45 @@
+from components.webelement import WebElement
+
+
+class AlertsPage:
+    def __init__(self, page):
+        self.page = page
+
+        self.button_js_alert = WebElement(
+            locator=page.get_by_role("button", name="Click for JS Alert"),
+            page=page,
+            description="Кнопка JS Alert"
+        )
+
+        self.button_js_confirm = WebElement(
+            locator=page.get_by_role("button", name="Click for JS Confirm"),
+            page=page,
+            description="Кнопка JS Confirm"
+        )
+
+        self.button_js_prompt = WebElement(
+            locator=page.get_by_role("button", name="Click for JS Prompt"),
+            page=page,
+            description="Кнопка JS Prompt"
+        )
+
+        self.result_message = WebElement(
+            locator=page.locator('p#result'),
+            page=page,
+            description="Секция Result"
+        )
+
+    def __str__(self):
+        return "AlertsPage"
+
+    def trigger_alert(self):
+        self.button_js_alert.click()
+
+    def trigger_confirm(self):
+        self.button_js_confirm.click()
+
+    def trigger_prompt(self):
+        self.button_js_prompt.click()
+
+    def get_result_text(self):
+        return self.result_message.get_text_content()
