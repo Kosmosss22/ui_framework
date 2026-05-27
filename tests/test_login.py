@@ -4,6 +4,7 @@ import logging
 
 logger = logging.getLogger(LOGGER_NAME)
 
+
 def test_basic_auth(page):
     logger.info("TEST: Starting basic auth test")
 
@@ -14,7 +15,12 @@ def test_basic_auth(page):
 
     page.goto(url)
     message = auth_page.get_success_message()
+    expected_text = "Congratulations! You must have the proper credentials."
 
-    assert "Congratulations! You must have the proper credentials." in message
+    assert expected_text in message, (
+        f"Success message mismatch:\n"
+        f"  Expected substring: '{expected_text}'\n"
+        f"  Actual message:     '{message}'"
+    )
 
     logger.info("TEST: basic auth scenarios passed")

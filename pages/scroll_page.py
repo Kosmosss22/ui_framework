@@ -20,7 +20,6 @@ class ScrollPage:
         return "Scroll page"
 
     def get_paragraphs_count(self):
-        logger.info(f"{self}: get count paragraphs")
         return self.paragraphs.count()
 
     def scroll_to_bottom(self):

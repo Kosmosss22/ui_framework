@@ -4,15 +4,20 @@ import logging
 
 logger = logging.getLogger(LOGGER_NAME)
 
-def test_upload_file(page):
+
+def test_upload_file(page, temp_file):
     logger.info("TEST: Starting upload file test")
     upload_page = UploadPage(page)
     url = "https://the-internet.herokuapp.com/upload"
-    file_path = "test_files/test"
 
     page.goto(url)
 
-    upload_page.upload_file(file_path)
+    upload_page.upload_file(temp_file)
     result_text = upload_page.get_result_text()
+    expected_text = "File Uploaded!"
 
-    assert "File Uploaded!" in result_text
+    assert expected_text in result_text, (
+        f"Upload result mismatch:\n"
+        f"  Expected substring: '{expected_text}'\n"
+        f"  Actual result:      '{result_text}'"
+    )

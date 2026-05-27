@@ -10,7 +10,6 @@ def test_frames(page):
 
     frames_page = FramePage(page)
     page.goto("https://the-internet.herokuapp.com/nested_frames")
-    page.wait_for_load_state("networkidle")
 
     frames_data = {
         FrameType.LEFT: "LEFT",

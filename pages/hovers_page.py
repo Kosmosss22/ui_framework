@@ -25,7 +25,6 @@ class HoversPage:
         return "Hovers page"
 
     def get_users_cnt(self):
-        logger.info(f"{self} get user count")
         return self.user_imgs.count()
 
     def hover_over_user(self, index):

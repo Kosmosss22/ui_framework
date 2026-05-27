@@ -25,4 +25,8 @@ def test_slider(page):
     slider_page.set_value_keyboard(target_value)
     display_value = slider_page.get_displayed_value()
 
-    assert float(display_value) == target_value
+    assert float(display_value) == target_value, (
+        f"Slider value mismatch:\n"
+        f"  Expected: {target_value}\n"
+        f"  Actual:   {float(display_value)}"
+    )

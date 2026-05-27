@@ -4,6 +4,7 @@ import logging
 
 logger = logging.getLogger(LOGGER_NAME)
 
+
 def test_download(page):
     logger.info("TEST: Starting download test")
     download_page = DownloadPage(page)
@@ -15,4 +16,8 @@ def test_download(page):
     download = download_page.download_file(2)
     actual_name = download.suggested_filename
 
-    assert expected_name == actual_name
+    assert expected_name == actual_name, (
+        f"Download filename mismatch:\n"
+        f"  Expected: '{expected_name}'\n"
+        f"  Actual:   '{actual_name}'"
+    )

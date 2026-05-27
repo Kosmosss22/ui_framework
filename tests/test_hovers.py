@@ -12,10 +12,15 @@ def test_hovers(page):
     page.goto(url)
 
     cnt = hovers_page.get_users_cnt()
-    assert cnt > 0
+    assert cnt > 0, f"Expected at least 1 user, but found {cnt}"
 
     for i in range(cnt):
         logger.info(f"Checking the user №{i}")
         hovers_page.hover_over_user(i)
         name = hovers_page.get_user_name(i)
-        assert "name: user" in name
+
+        assert "name: user" in name, (
+            f"User name mismatch at index {i}:\n"
+            f"  Expected substring: 'name: user'\n"
+            f"  Actual name:        '{name}'"
+        )

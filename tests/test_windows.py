@@ -6,6 +6,7 @@ import logging
 
 logger = logging.getLogger(LOGGER_NAME)
 
+
 def test_windows(page):
     logger.info("TEST: Starting windows test")
     windows_page = WindowsPage(page)

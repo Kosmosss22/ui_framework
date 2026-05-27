@@ -1,16 +1,21 @@
-from enum import Enum
+from enum import StrEnum
 import logging
+from components.webelement import WebElement
 from logger import LOGGER_NAME
 
 logger = logging.getLogger(LOGGER_NAME)
 
-class FrameType(Enum):
+
+class FrameType(StrEnum):
     LEFT = "left"
     RIGHT = "right"
     MIDDLE = "middle"
     BOTTOM = "bottom"
 
+
 class FramePage:
+    BODY_LOCATOR = "body"
+
     def __init__(self, page):
         self.page = page
 
@@ -31,7 +36,19 @@ class FramePage:
     def __str__(self):
         return "FramePage"
 
+    def _get_body_element(self, frame_locator, frame_type):
+        logger.info(f"{self} creating body element for frame")
+
+        return WebElement(
+            locator=frame_locator.locator(self.BODY_LOCATOR),
+            page=self.page,
+            description=f"{frame_type} frame body"
+        )
+
     def get_text_from_frame(self, frame_type: FrameType) -> str:
         frame_locator = self._frames_map[frame_type]
-        logger.info(f"{self} get text from frame '{frame_type.value}'")
-        return frame_locator.locator("body").inner_text().strip()
+        logger.info(f"{self} get text from frame '{frame_type}'")
+
+        body_element = self._get_body_element(frame_locator, frame_type)
+
+        return body_element.get_inner_text()
